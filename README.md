@@ -106,7 +106,7 @@ solana-memecrime/
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact Me
-**Projet Lead**: [@thatbwoysammyj](x.com/thatbwoysammyj)
-**Email**: [thetruesammyjay@gmail.com](mailto:thetruesammyjay@gmail.com)
----
+- **Projet Lead**: [@thatbwoysammyj](x.com/thatbwoysammyj)
+- **Email**: [thetruesammyjay@gmail.com](mailto:thetruesammyjay@gmail.com)
+
 Thanks for going through this repository, more updates would be made to this project before the end of Q2 2025
