@@ -1,6 +1,5 @@
 # Solana Memecrime Investigation (MCSI)
 
-
 > On-chain forensic toolkit for detecting rug pulls and scam tokens on Solana
 
 ## Features
@@ -10,6 +9,9 @@
 - 🚨 Automated alert system
 - 🔗 Wallet clustering and entity resolution
 - 📊 Interactive dashboard visualization
+
+## Dune Dashboard Link
+- [MCSI SOLANA MEMECRIME MONITOR](https://dune.com/thetruesammyjay/mcsi-solana-memecrime-monitor)
 
 ## Tech Stack
 
@@ -106,3 +108,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact Me
 **Projet Lead**: [@thatbwoysammyj](x.com/thatbwoysammyj)
 **Email**: [thetruesammyjay@gmail.com](mailto:thetruesammyjay@gmail.com)
+---
+Thanks for going through this repository, more updates would be made to this project before the end of Q2 2025
