@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom font faces */
+@font-face {
+  font-family: 'Solana';
+  src: url('../fonts/Solana.ttf');
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  @apply w-1 h-1;
+}
+
+/* Main Web3 Solana theme */
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Custom Cards */
+.card-glass {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.card-glass:hover {
+  border-color: #14f195;
+  box-shadow: 0 0 20px #14f19555;
+}
+
+/* Glow Button */
+.btn-glow {
+  background: linear-gradient(90deg, #14f195, #9945ff);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  transition: all 0.4s ease;
+}
+
+.btn-glow:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #9945ffaa;
+}

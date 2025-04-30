@@ -1,0 +1,27 @@
+groups:
+- name: mcsi-alerts
+  rules:
+  - alert: HighErrorRate
+    expr: rate(fastapi_request_failures_total[5m]) > 0.1
+    for: 10m
+    labels:
+      severity: critical
+    annotations:
+      summary: "High error rate on {{ $labels.endpoint }}"
+      description: "Error rate is {{ $value }} for endpoint {{ $labels.endpoint }}"
+
+  - alert: DatabaseHighConnections
+    expr: pg_stat_activity_count > 50
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: "High database connections ({{ $value }})"
+
+  - alert: ServiceDown
+    expr: up == 0
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Service {{ $labels.instance }} is down"

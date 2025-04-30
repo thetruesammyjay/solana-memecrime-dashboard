@@ -1,0 +1,38 @@
+{
+    "title": "MCSI Monitoring",
+    "panels": [
+      {
+        "title": "API Response Times",
+        "type": "graph",
+        "datasource": "Prometheus",
+        "targets": [
+          {
+            "expr": "rate(fastapi_request_duration_seconds_sum[1m])/rate(fastapi_request_duration_seconds_count[1m])",
+            "legendFormat": "{{endpoint}}"
+          }
+        ]
+      },
+      {
+        "title": "Database Connections",
+        "type": "stat",
+        "datasource": "Prometheus",
+        "targets": [
+          {
+            "expr": "pg_stat_activity_count",
+            "legendFormat": "Connections"
+          }
+        ]
+      },
+      {
+        "title": "Alerts Triggered",
+        "type": "heatmap",
+        "datasource": "Prometheus",
+        "targets": [
+          {
+            "expr": "sum by (alert_type) (mcsi_alerts_triggered_total)",
+            "legendFormat": "{{alert_type}}"
+          }
+        ]
+      }
+    ]
+  }
